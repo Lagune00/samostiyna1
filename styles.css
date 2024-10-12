@@ -1,0 +1,51 @@
+
+.block-a {
+    width: 100%;
+    height: 400px;
+    background-color: lightblue; /* Колір тексту вказаний як синій */
+    position: relative;
+}
+
+
+.block-a p {
+    color: blue;
+    margin-left: 10px;
+}
+
+
+.block-b {
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 100px; /* Відступ зверху */
+    left: 50%;
+    transform: translateX(-50%); /* Вирівнювання по центру блока A */
+}
+
+
+.block-c {
+    width: 110px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: calc(50% + 200px); /* Відступ від центру з урахуванням ширини блока B */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    border: 1px solid black; /* Додано для візуалізації меж */
+}
+
+
+.block-d {
+    width: 80px;
+    height: 20px;
+    background-color: white;
+    position: fixed; /* Фіксація позиції, щоб блок не рухався при скролі */
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
